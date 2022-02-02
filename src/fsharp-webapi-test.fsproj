@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>fsharp_webapi_test</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Schema/Models.fs" />
+    <Compile Include="ClientStore.fs" />
+
+
+    <Compile Include="HttpHandlers/ClientHttpHandlers.fs" />
+    <Compile Include="MyRoutes.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Giraffe" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
